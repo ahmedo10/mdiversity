@@ -72,7 +72,7 @@
 </head>
 <body>
 
-    <header class="fixed w-full top-0 z-[1000] bg-white/90 backdrop-blur-md transition-all duration-300 py-4 shadow-sm">
+    <header class="fixed w-full top-0 z-[1000] bg-white lg:bg-white/90 backdrop-blur-md transition-all duration-300 py-4 shadow-sm">
         <div class="max-w-[1300px] mx-auto px-6 sm:px-10">
             <nav class="flex justify-between items-center">
                 <a href="#" class="h-12 sm:h-16">
@@ -100,45 +100,6 @@
                     </button>
                 </div>
             </nav>
-        </div>
-
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="fixed inset-0 bg-white z-[1000] flex flex-col pt-32 px-10 gap-8 text-2xl font-extrabold uppercase tracking-widest translate-x-full transition-transform duration-500 ease-in-out lg:hidden">
-            <div class="absolute top-8 left-10">
-                <img src="LOGO MDIVERSITY.png" alt="MDIVERSITY" class="h-10">
-            </div>
-            <a href="#home" class="mobile-link border-b border-gray-100 pb-4 flex justify-between items-center group">
-                <span>Accueil</span>
-                <i class="fas fa-chevron-right text-sm text-medical-accent opacity-0 group-hover:opacity-100 transition-opacity"></i>
-            </a>
-            <a href="#about" class="mobile-link border-b border-gray-100 pb-4 flex justify-between items-center group">
-                <span>Engagement</span>
-                <i class="fas fa-chevron-right text-sm text-medical-accent opacity-0 group-hover:opacity-100 transition-opacity"></i>
-            </a>
-            <a href="#products" class="mobile-link border-b border-gray-100 pb-4 flex justify-between items-center group">
-                <span>Solutions</span>
-                <i class="fas fa-chevron-right text-sm text-medical-accent opacity-0 group-hover:opacity-100 transition-opacity"></i>
-            </a>
-            <a href="#tips" class="mobile-link border-b border-gray-100 pb-4 flex justify-between items-center group">
-                <span>Astuces</span>
-                <i class="fas fa-chevron-right text-sm text-medical-accent opacity-0 group-hover:opacity-100 transition-opacity"></i>
-            </a>
-            <a href="#contact" class="mobile-link border-b border-gray-100 pb-4 flex justify-between items-center group text-medical-blue">
-                <span>Contact</span>
-                <i class="fas fa-chevron-right text-sm text-medical-accent opacity-0 group-hover:opacity-100 transition-opacity"></i>
-            </a>
-            
-            <div class="mt-auto pb-12 flex gap-6">
-                <a href="https://www.facebook.com/mdiversity.tn" class="w-12 h-12 bg-gray-100 flex items-center justify-center rounded-full text-medical-blue">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://wa.me/21624709868" class="w-12 h-12 bg-gray-100 flex items-center justify-center rounded-full text-medical-blue">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="mailto:contact@mdiversity.com" class="w-12 h-12 bg-gray-100 flex items-center justify-center rounded-full text-medical-blue">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
         </div>
     </header>
 
@@ -484,6 +445,46 @@
         <i class="fas fa-arrow-up group-hover:-translate-y-1 transition-transform"></i>
     </button>
 
+    <!-- Mobile Navigation Menu (Full Screen Corporate Style) -->
+    <div id="mobile-menu" style="position: fixed; inset: 0; background-color: #ffffff; z-index: 999999; display: none; flex-direction: column; padding: 30px; opacity: 0; transition: opacity 0.5s ease;">
+        <!-- Header inside menu -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px;">
+            <img src="LOGO MDIVERSITY.png" alt="MDIVERSITY" style="height: 35px;">
+            <button id="close-menu" style="background: none; border: none; font-size: 30px; cursor: pointer; color: #121212;">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Links Container -->
+        <nav style="display: flex; flex-direction: column; gap: 25px; align-items: flex-start;">
+            <a href="#home" class="mobile-link" style="font-size: 32px; font-weight: 800; text-transform: uppercase; text-decoration: none; color: #121212; display: flex; align-items: center; gap: 15px;">
+                <span style="font-size: 14px; color: #00a8e8;">01</span> ACCUEIL
+            </a>
+            <a href="#about" class="mobile-link" style="font-size: 32px; font-weight: 800; text-transform: uppercase; text-decoration: none; color: #121212; display: flex; align-items: center; gap: 15px;">
+                <span style="font-size: 14px; color: #00a8e8;">02</span> ENGAGEMENT
+            </a>
+            <a href="#products" class="mobile-link" style="font-size: 32px; font-weight: 800; text-transform: uppercase; text-decoration: none; color: #121212; display: flex; align-items: center; gap: 15px;">
+                <span style="font-size: 14px; color: #00a8e8;">03</span> SOLUTIONS
+            </a>
+            <a href="#tips" class="mobile-link" style="font-size: 32px; font-weight: 800; text-transform: uppercase; text-decoration: none; color: #121212; display: flex; align-items: center; gap: 15px;">
+                <span style="font-size: 14px; color: #00a8e8;">04</span> ASTUCES
+            </a>
+            <a href="#contact" class="mobile-link" style="font-size: 32px; font-weight: 800; text-transform: uppercase; text-decoration: none; color: #1e4d8c; display: flex; align-items: center; gap: 15px; border-top: 1px solid #f0f0f0; padding-top: 20px; width: 100%;">
+                <span style="font-size: 14px; color: #00a8e8;">05</span> CONTACT
+            </a>
+        </nav>
+        
+        <!-- Footer info inside menu -->
+        <div style="margin-top: auto; border-top: 1px solid #f0f0f0; padding-top: 30px;">
+            <p style="font-size: 12px; font-weight: 700; color: #999; text-transform: uppercase; margin-bottom: 20px;">SUIVEZ-NOUS</p>
+            <div style="display: flex; gap: 20px;">
+                <a href="https://www.facebook.com/mdiversity.tn" style="color: #1e4d8c; font-size: 20px;"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/21624709868" style="color: #1e4d8c; font-size: 20px;"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:contact@mdiversity.com" style="color: #1e4d8c; font-size: 20px;"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Carousel Logic
         let currentSlide = 0;
@@ -514,36 +515,31 @@
 
         // Mobile Menu Toggle
         const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-menu');
         const mobileMenu = document.getElementById('mobile-menu');
-        const menuSpans = menuBtn.querySelectorAll('span');
 
-        menuBtn.addEventListener('click', () => {
-            const isOpen = mobileMenu.classList.contains('translate-x-0');
-            
-            if (isOpen) {
-                mobileMenu.classList.replace('translate-x-0', 'translate-x-full');
-                menuSpans[0].classList.remove('rotate-45', 'translate-y-2');
-                menuSpans[1].classList.remove('opacity-0');
-                menuSpans[2].classList.remove('-rotate-45', '-translate-y-2');
-                document.body.style.overflow = '';
-            } else {
-                mobileMenu.classList.replace('translate-x-full', 'translate-x-0');
-                menuSpans[0].classList.add('rotate-45', 'translate-y-2');
-                menuSpans[1].classList.add('opacity-0');
-                menuSpans[2].classList.add('-rotate-45', '-translate-y-2');
-                document.body.style.overflow = 'hidden';
-            }
-        });
+        function openMenu() {
+            mobileMenu.style.display = 'flex';
+            setTimeout(() => {
+                mobileMenu.style.opacity = '1';
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            mobileMenu.style.opacity = '0';
+            setTimeout(() => {
+                mobileMenu.style.display = 'none';
+            }, 500);
+            document.body.style.overflow = '';
+        }
+
+        menuBtn.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
 
         // Close menu on link click
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.replace('translate-x-0', 'translate-x-full');
-                menuSpans[0].classList.remove('rotate-45', 'translate-y-2');
-                menuSpans[1].classList.remove('opacity-0');
-                menuSpans[2].classList.remove('-rotate-45', '-translate-y-2');
-                document.body.style.overflow = '';
-            });
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', closeMenu);
         });
 
 
@@ -583,15 +579,27 @@
                 if (entry.isIntersecting) {
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
+                    revealObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 });
+        }, { 
+            threshold: 0.01,
+            rootMargin: '0px 0px -50px 0px'
+        });
 
         revealElements.forEach(el => {
             el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 1s cubic-bezier(0.4, 0, 0.2, 1)';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
             revealObserver.observe(el);
+            
+            // Fallback for mobile or slow observers: show after 2s if still hidden
+            setTimeout(() => {
+                if (el.style.opacity === '0') {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            }, 2000);
         });
 
         // Swiper Initialization
