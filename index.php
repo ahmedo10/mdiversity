@@ -11,14 +11,14 @@
     <meta property="og:url" content="http://mdiversity.tn/">
     <meta property="og:title" content="MDIVERSITY | Sécurité Médicale & Hygiène">
     <meta property="og:description" content="Solutions professionnelles de désinfection et protection médicale en Tunisie.">
-    <meta property="og:image" content="logo.png">
+    <meta property="og:image" content="assets/images/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="MDIVERSITY | Sécurité Médicale">
     <meta property="twitter:description" content="Votre partenaire hygiène et sécurité en Tunisie.">
     
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -58,7 +58,7 @@
       "@type": "MedicalOrganization",
       "name": "MDIVERSITY",
       "url": "http://mdiversity.tn/",
-      "logo": "http://mdiversity.tn/logo.png",
+      "logo": "http://mdiversity.tn/assets/images/logo.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+21624709868",
@@ -76,7 +76,7 @@
         <div class="max-w-[1300px] mx-auto px-6 sm:px-10">
             <nav class="flex justify-between items-center">
                 <a href="#" class="h-12 sm:h-16">
-                    <img src="LOGO MDIVERSITY.png" alt="MDIVERSITY Logo" class="h-full object-contain">
+                    <img src="assets/images/LOGO MDIVERSITY.png" alt="MDIVERSITY Logo" class="h-full object-contain">
                 </a>
                 
                 <!-- Desktop Navigation -->
@@ -107,9 +107,9 @@
         <!-- Hero Section -->
         <section id="home" class="relative h-screen flex items-center overflow-hidden pt-20">
             <div class="absolute inset-0 z-[-1] carousel">
-                <div class="slide active absolute inset-0 bg-cover bg-center transition-opacity duration-[1500ms]" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('carousel/9.png');"></div>
-                <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-[1500ms]" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('carousel/10.png');"></div>
-                <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-[1500ms]" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('carousel/11.png');"></div>
+                <div class="slide active absolute inset-0 bg-cover bg-center transition-opacity duration-[1500ms]" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/carousel/9.png');"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-[1500ms]" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/carousel/10.png');"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-[1500ms]" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/carousel/11.png');"></div>
             </div>
             <div class="max-w-[1300px] mx-auto px-6 sm:px-10 w-full text-white">
                 <div class="max-w-[800px] animate-[fadeIn_1s_ease-out]">
@@ -137,7 +137,7 @@
                 <div class="grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-20 items-center">
                     <div class="relative group">
                         <div class="overflow-hidden shadow-2xl">
-                            <img src="logo.png" alt="MDIVERSITY Logo" class="w-full bg-white p-12 object-contain group-hover:scale-105 transition-transform duration-700">
+                            <img src="assets/images/logo.png" alt="MDIVERSITY Logo" class="w-full bg-white p-12 object-contain group-hover:scale-105 transition-transform duration-700">
                         </div>
                         <div class="absolute -bottom-6 -right-6 sm:-bottom-10 sm:-right-10 bg-medical-blue text-white p-6 sm:p-10 shadow-2xl animate-bounce-subtle">
                             <span class="block text-4xl sm:text-5xl font-black leading-none">10+</span>
@@ -238,7 +238,7 @@
                     ];
                     foreach ($articles as $art): ?>
                     <div class="group relative aspect-square overflow-hidden bg-gray-100">
-                        <img src="articles mdiversity/<?= $art[0] ?>" alt="<?= $art[1] ?>" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/images/articles/<?= $art[0] ?>" alt="<?= $art[1] ?>" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-medical-dark/90 via-medical-dark/40 to-transparent flex flex-col justify-end p-8 translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                             <h3 class="text-white text-xl font-bold mb-2 uppercase tracking-tight"><?= $art[1] ?></h3>
                             <p class="text-white/80 text-xs font-medium"><?= $art[2] ?></p>
@@ -248,7 +248,7 @@
                 </div>
 
                 <div class="text-center mt-16">
-                    <a href="catalogue.pdf" target="_blank" class="bg-medical-dark text-white px-12 py-4 text-[13px] font-bold uppercase tracking-widest hover:bg-medical-accent transition-all duration-300 shadow-xl inline-block">
+                    <a href="assets/docs/catalogue.pdf" target="_blank" class="bg-medical-dark text-white px-12 py-4 text-[13px] font-bold uppercase tracking-widest hover:bg-medical-accent transition-all duration-300 shadow-xl inline-block">
                         Consulter le Catalogue PDF
                     </a>
               <!-- Tips Carousel Section -->
@@ -279,7 +279,7 @@
                         <div class="swiper-slide h-auto">
                             <div class="bg-gray-50 border border-gray-100 p-4 h-full flex flex-col hover:border-medical-accent transition-all duration-300 group">
                                 <div class="aspect-[4/5] bg-white overflow-hidden mb-6 flex items-center justify-center p-2">
-                                    <img src="pub1 blog/<?= $i ?>.png" alt="Astuce <?= $i ?> - <?= $tips[$i-1] ?>" class="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105">
+                                    <img src="assets/images/blog/<?= $i ?>.png" alt="Astuce <?= $i ?> - <?= $tips[$i-1] ?>" class="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105">
                                 </div>
                                 <div class="mt-auto">
                                     <span class="text-[10px] font-bold text-medical-accent uppercase tracking-widest block mb-2">Protocoles Médicaux</span>
@@ -395,7 +395,7 @@
         <div class="max-w-[1300px] mx-auto px-6 sm:px-10">
             <div class="grid md:grid-cols-[2fr_1fr_1fr] gap-12 lg:gap-20 mb-20">
                 <div class="max-w-md">
-                    <img src="LOGO CARRE FOOTER.png" alt="MDIVERSITY" class="h-20 mb-8 brightness-0 invert">
+                    <img src="assets/images/LOGO CARRE FOOTER.png" alt="MDIVERSITY" class="h-20 mb-8 brightness-0 invert">
                     <p class="text-white/70 text-sm leading-relaxed mb-8 font-medium">
                         L'excellence en sécurité médicale et hygiène professionnelle. Votre partenaire de confiance en Tunisie pour des solutions innovantes et certifiées.
                     </p>
@@ -449,7 +449,7 @@
     <div id="mobile-menu" style="position: fixed; inset: 0; background-color: #ffffff; z-index: 999999; display: none; flex-direction: column; padding: 30px; opacity: 0; transition: opacity 0.5s ease;">
         <!-- Header inside menu -->
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px;">
-            <img src="LOGO MDIVERSITY.png" alt="MDIVERSITY" style="height: 35px;">
+            <img src="assets/images/LOGO MDIVERSITY.png" alt="MDIVERSITY" style="height: 35px;">
             <button id="close-menu" style="background: none; border: none; font-size: 30px; cursor: pointer; color: #121212;">
                 <i class="fas fa-times"></i>
             </button>
